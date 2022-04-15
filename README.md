@@ -1,12 +1,10 @@
 # Application of GradCAM on DeepFake faces in videos
 
-![overview gif](gifs/gif1.gif)
-![overview gif](gifs/gif1_analyzed.gif)
+![gif1](gifs/gif1.gif)
 
 It can also work with multiple faces.
 
-![overview gif](gifs/gif2.gif)
-![overview gif](gifs/gif2_analyzed.gif)
+![gif2](gifs/gif2.gif)
 
 ## Definition
 
