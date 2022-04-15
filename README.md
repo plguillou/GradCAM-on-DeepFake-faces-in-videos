@@ -18,16 +18,13 @@ Using [dlib and OpenCV](https://pyimagesearch.com/2017/04/03/facial-landmarks-dl
 
 The folder is composed of a folder containing the models used (like the *MesoInception_DF*), and three python files.
 
-
 The file *classifiers.py* has not been modified in any way and comes from the [GitHub (DariusAf/MesoNet)](https://github.com/DariusAf/MesoNet) of [this paper](https://arxiv.org/abs/1809.00888). It contains the necessary architectures to load the models of the paper.
 
-
-The file *gradcam.py* comes from the [GitHub cabjr/tf2cam](https://github.com/cabjr/tf2cam) and has been modified in parts to fit the problem. It is here that we explore the gradient of the model to generate the heatmap representing the area of of interest of the neural network.
-
+The file *gradcam.py* comes from the [GitHub cabjr/tf2cam](https://github.com/cabjr/tf2cam) and has been modified in some parts to fit the problem. It is here that we explore the gradient of the model to generate the heatmap representing the area of interest of the neural network.
 
 The *main.py* file is the main file that must be launched to run everything. We coded it ourselves, except for some lines borrowed from [Adrian Rosebrock's pyimagesearch.com site](https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/) for the face detection.
 
-The file also contains two videos from the [2020 Kaggle Deepfake Detection Challenge dataset](https://www.kaggle.com/competitions/deepfake-detection-challenge/data) and their two analyzed versions after being processed.
+The folder also contains two videos (gif format) from the [2020 Kaggle Deepfake Detection Challenge dataset](https://www.kaggle.com/competitions/deepfake-detection-challenge/data) and their two analyzed versions after being processed.
 
 ## Python libraries
 
@@ -37,9 +34,7 @@ The python libraries needed to run the code are *TensorFlow* (version 2), *OpenC
 
 **To run the project**, you just have to change the name of the video at the very bottom of the *main.py* file and then run this file in an environment containing the python libraries mentioned above.
 
-
 If you want to use the code in another context, you just have to change the way you retrieve the path of the video to be processed, to modify the loading of the model if necessary, create the object as at the end of the code in the *main.py* file, then call the method *.main()*.
-
 
 ```python
 name_of_video = "video.mp4"
@@ -51,4 +46,4 @@ analyzer.main()
 
 ## Want to use another model?
 
-If you want to use another model and that model does not have the same labels as the models I used, don't forget to change the GAN detection threshold part in the *gan_analysis()* function in *main.py*.
+If you want to use another model and that model does not have the same labels as the models I used, don't forget to change the GAN detection threshold part in the *.gan_analysis()* function in *main.py*.
