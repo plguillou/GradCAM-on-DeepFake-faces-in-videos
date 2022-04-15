@@ -4,7 +4,7 @@
 
 It can also work with multiple faces.
 
-![gif2](gifs/gif2.gif)
+![gif1](gifs/gif2.gif)
 
 ## Definition
 
