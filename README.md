@@ -12,7 +12,7 @@ It can also work with multiple faces.
 
 ## How does it work?
 
-Using [dlib and OpenCV](https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/), the faces in the video are detected. Then, the faces are sent to the [neural network](https://github.com/DariusAf/MesoNet) to find out if it is a DeepFake or not. Finally, if a DeepFake is found, we apply [GradCAM](https://github.com/cabjr/tf2cam) to highlight the areas that triggered the neural network prediction.
+Using [dlib and OpenCV](https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/), the faces in the video are detected. Then, the faces are sent to the [neural network](https://github.com/DariusAf/MesoNet) to find out if it is a DeepFake or not. Finally, if a DeepFake is found, I apply [GradCAM](https://github.com/cabjr/tf2cam) to highlight the areas that triggered the neural network prediction.
 
 ## What's in it?
 
@@ -22,7 +22,7 @@ The file *classifiers.py* has not been modified in any way and comes from the [G
 
 The file *gradcam.py* comes from the [GitHub cabjr/tf2cam](https://github.com/cabjr/tf2cam) and has been modified in some parts to fit the problem. It is here that we explore the gradient of the model to generate the heatmap representing the area of interest of the neural network.
 
-The *main.py* file is the main file that must be launched to run everything. We coded it ourselves, except for some lines borrowed from [Adrian Rosebrock's pyimagesearch.com site](https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/) for the face detection.
+The *main.py* file is the main file that must be launched to run everything. I coded it myself, except for some lines borrowed from [Adrian Rosebrock's pyimagesearch.com site](https://pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/) for the face detection.
 
 The folder also contains two videos (gif format) from the [2020 Kaggle Deepfake Detection Challenge dataset](https://www.kaggle.com/competitions/deepfake-detection-challenge/data) and their two analyzed versions after being processed.
 
